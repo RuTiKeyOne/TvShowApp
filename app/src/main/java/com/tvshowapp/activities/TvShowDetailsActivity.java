@@ -34,6 +34,7 @@ public class TvShowDetailsActivity extends AppCompatActivity {
 
     private void init() {
         tvShowDetailsViewModel = new ViewModelProvider(this).get(TvShowDetailsViewModel.class);
+        activityTvShowDetailsBinding.imageBack.setOnClickListener(view -> onBackPressed());
         getTvShowDetails();
     }
 
@@ -47,6 +48,12 @@ public class TvShowDetailsActivity extends AppCompatActivity {
                             && tvShowDetailsResponse.getTvShowDetails().getImagePath() != null) {
                         loadSliderImage(tvShowDetailsResponse.getTvShowDetails().getPictures());
                     }
+
+                    activityTvShowDetailsBinding.setTvShowImageUrl(
+                            tvShowDetailsResponse.getTvShowDetails().getImagePath()
+                    );
+                    activityTvShowDetailsBinding.imageTVShow.setVisibility(View.VISIBLE);
+                    loadBasicTvShowDetails();
                 }
 
         );
@@ -101,5 +108,18 @@ public class TvShowDetailsActivity extends AppCompatActivity {
                         R.drawable.background_slider_indicator_inactive));
             }
         }
+    }
+
+    private void loadBasicTvShowDetails(){
+        activityTvShowDetailsBinding.setTvShowName(getIntent().getStringExtra("name"));
+        activityTvShowDetailsBinding.setNetworkCountry(getIntent().getStringExtra(
+                "network") + "(" + getIntent().getStringExtra("country") + ")");
+        activityTvShowDetailsBinding.setStatus(getIntent().getStringExtra("status"));
+        activityTvShowDetailsBinding.setStartedDate(getIntent().getStringExtra("status"));
+
+        activityTvShowDetailsBinding.textName.setVisibility(View.VISIBLE);
+        activityTvShowDetailsBinding.textNetworkCountry.setVisibility(View.VISIBLE);
+        activityTvShowDetailsBinding.textStatus.setVisibility(View.VISIBLE);
+        activityTvShowDetailsBinding.textStarted.setVisibility(View.VISIBLE);
     }
 }
