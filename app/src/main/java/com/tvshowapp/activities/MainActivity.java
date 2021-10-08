@@ -6,18 +6,20 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.tvshowapp.R;
 import com.tvshowapp.adapters.TvShowAdapter;
 import com.tvshowapp.databinding.ActivityMainBinding;
+import com.tvshowapp.listener.TvShowListener;
 import com.tvshowapp.models.TvShow;
 import com.tvshowapp.viewmodels.MostPopularTvShowsViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements TvShowListener {
 
     private MostPopularTvShowsViewModel viewModel;
     private ActivityMainBinding activityMainBinding;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         activityMainBinding.tvShowRecycleView.setHasFixedSize(true);
         viewModel = new ViewModelProvider(this).get(MostPopularTvShowsViewModel.class);
-        tvShowAdapter = new TvShowAdapter(tvShows);
+        tvShowAdapter = new TvShowAdapter(tvShows, this);
         activityMainBinding.tvShowRecycleView.setAdapter(tvShowAdapter);
         activityMainBinding.tvShowRecycleView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -83,5 +85,17 @@ public class MainActivity extends AppCompatActivity {
                 activityMainBinding.setIsLoadingMore(true);
             }
         }
+    }
+
+    @Override
+    public void onTvShowClicked(TvShow tvShow) {
+        Intent intent = new Intent(getApplicationContext(), TvShowDetailsActivity.class);
+        intent.putExtra("id", tvShow.getId());
+        intent.putExtra("name", tvShow.getName());
+        intent.putExtra("startDate", tvShow.getStartDate());
+        intent.putExtra("country", tvShow.getCountry());
+        intent.putExtra("network", tvShow.getNetwork());
+        intent.putExtra("status", tvShow.getStatus());
+        startActivity(intent);
     }
 }
