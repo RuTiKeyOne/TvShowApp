@@ -56,8 +56,6 @@ public class TvShowAdapter extends RecyclerView.Adapter<TvShowAdapter.TvShowView
             this.itemContainerTvShowBinding = itemContainerTvShowBinding;
         }
 
-
-
         public void bindTvShow(TvShow tvShow){
             itemContainerTvShowBinding.setTvShow(tvShow);
             itemContainerTvShowBinding.executePendingBindings();
