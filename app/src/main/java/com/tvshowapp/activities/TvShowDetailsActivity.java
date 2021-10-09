@@ -1,19 +1,18 @@
 package com.tvshowapp.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.viewpager2.widget.ViewPager2;
-
-import android.content.Context;
-import android.media.Image;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.text.HtmlCompat;
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.tvshowapp.R;
 import com.tvshowapp.adapters.ImageSliderAdapter;
@@ -53,6 +52,25 @@ public class TvShowDetailsActivity extends AppCompatActivity {
                             tvShowDetailsResponse.getTvShowDetails().getImagePath()
                     );
                     activityTvShowDetailsBinding.imageTVShow.setVisibility(View.VISIBLE);
+                    activityTvShowDetailsBinding.setDescription(String.valueOf(
+                            HtmlCompat.fromHtml(
+                                    tvShowDetailsResponse.getTvShowDetails().getDescription(),
+                                    HtmlCompat.FROM_HTML_MODE_LEGACY
+                            )
+                    ));
+                    activityTvShowDetailsBinding.textDescription.setVisibility(View.VISIBLE);
+                    activityTvShowDetailsBinding.textReadMore.setVisibility(View.VISIBLE);
+                    activityTvShowDetailsBinding.textReadMore.setOnClickListener(view -> {
+                        if (activityTvShowDetailsBinding.textReadMore.getText().toString().equals("Read More")) {
+                            activityTvShowDetailsBinding.textDescription.setMaxLines(Integer.MAX_VALUE);
+                            activityTvShowDetailsBinding.textDescription.setEllipsize(null);
+                            activityTvShowDetailsBinding.textReadMore.setText(R.string.read_less);
+                        } else {
+                            activityTvShowDetailsBinding.textDescription.setMaxLines(4);
+                            activityTvShowDetailsBinding.textDescription.setEllipsize(TextUtils.TruncateAt.END);
+                            activityTvShowDetailsBinding.textReadMore.setText(R.string.read_more);
+                        }
+                    });
                     loadBasicTvShowDetails();
                 }
 
@@ -110,7 +128,7 @@ public class TvShowDetailsActivity extends AppCompatActivity {
         }
     }
 
-    private void loadBasicTvShowDetails(){
+    private void loadBasicTvShowDetails() {
         activityTvShowDetailsBinding.setTvShowName(getIntent().getStringExtra("name"));
         activityTvShowDetailsBinding.setNetworkCountry(getIntent().getStringExtra(
                 "network") + "(" + getIntent().getStringExtra("country") + ")");
