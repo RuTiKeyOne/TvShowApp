@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.tvshowapp.R;
 import com.tvshowapp.adapters.TvShowAdapter;
@@ -34,7 +35,17 @@ public class MainActivity extends AppCompatActivity implements TvShowListener {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         init();
+
+        activityMainBinding.imageWatchList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), WatchlistActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 
     private void init() {
         activityMainBinding.tvShowRecycleView.setHasFixedSize(true);
