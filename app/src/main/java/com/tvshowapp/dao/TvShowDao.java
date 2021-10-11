@@ -23,7 +23,9 @@ public abstract interface TvShowDao {
     Completable addToWatchlist(TvShow tvShow);
 
     @Delete
-    void removeToWatchlist(TvShow tvShow);
+    Completable removeToWatchlist(TvShow tvShow);
 
+    @Query("SELECT * FROM tvShows WHERE id = :tvShowId")
+    Flowable<TvShow> getTvShowFromWatchlist(String tvShowId);
 
 }
