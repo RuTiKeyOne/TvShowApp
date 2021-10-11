@@ -6,14 +6,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.tvshowapp.R;
 import com.tvshowapp.adapters.WatchlistAdapter;
 import com.tvshowapp.databinding.ActivityWatchlistBinding;
-import com.tvshowapp.databinding.ActivityWatchlistBindingImpl;
 import com.tvshowapp.listener.WatchlistListener;
 import com.tvshowapp.models.TvShow;
 import com.tvshowapp.utilities.TempDataHolder;
@@ -22,7 +19,6 @@ import com.tvshowapp.viewmodels.WatchlistViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;

@@ -33,7 +33,6 @@ import com.tvshowapp.viewmodels.TvShowDetailsViewModel;
 
 import java.util.Locale;
 
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;

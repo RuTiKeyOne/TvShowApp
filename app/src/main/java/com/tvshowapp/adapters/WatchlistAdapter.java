@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.tvshowapp.R;
 import com.tvshowapp.databinding.ItemContainerTvShowBinding;
-import com.tvshowapp.listener.TvShowListener;
 import com.tvshowapp.listener.WatchlistListener;
 import com.tvshowapp.models.TvShow;
 
