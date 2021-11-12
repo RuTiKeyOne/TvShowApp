@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Dart/AndroidStudioProjects/TvShowApp/app/src/main/res/drawable/backround_slider_indicator_active.xml" value="0.225" />
+        <entry key="..\:/Users/Dart/AndroidStudioProjects/TvShowApp/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Dart/AndroidStudioProjects/TvShowApp/app/src/main/res/layout/activity_search.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/Dart/AndroidStudioProjects/TvShowApp/app/src/main/res/layout/item_container_episode.xml" value="0.371875" />
+        <entry key="..\:/Users/Dart/AndroidStudioProjects/TvShowApp/app/src/main/res/layout/layout_episode_bottom_sheet.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/rutikeyone/AndroidStudioProjects/TVShowApp/app/src/main/res/drawable/backgroud_tv_show.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/rutikeyone/AndroidStudioProjects/TVShowApp/app/src/main/res/drawable/background_tv_show.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/rutikeyone/AndroidStudioProjects/TVShowApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -27,7 +32,7 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
