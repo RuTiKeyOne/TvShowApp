@@ -4,4 +4,3 @@ Welcome to the self-service-app wiki! There is a detailed description of the pro
 
 
 1. [Learn more about project files]()
-2. [Questions that you may have]()
