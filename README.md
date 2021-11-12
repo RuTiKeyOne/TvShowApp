@@ -5,14 +5,14 @@
 ## Screenshots
 
 <p align="center">
-  <img src="https://i.ibb.co/QjzYCG7/1.png" width="220"/>
-  <img src="https://i.ibb.co/HpSzY3s/2.png" width="220"/>
-  <img src="https://i.ibb.co/FJ6p1q9/3.png" width="220"/>
+  <img src="https://i.ibb.co/QjzYCG7/1.png" width="250"/>
+  <img src="https://i.ibb.co/HpSzY3s/2.png" width="250"/>
+  <img src="https://i.ibb.co/FJ6p1q9/3.png" width="250"/>
 </p>
 
 <p align="center">
-  <img src="https://i.ibb.co/3mKVb3t/4.png" width="220"/>
-  <img src="https://i.ibb.co/JcZ0gMH/5.png" width="220"/>
+  <img src="https://i.ibb.co/3mKVb3t/4.png" width="250"/>
+  <img src="https://i.ibb.co/JcZ0gMH/5.png" width="250"/>
 </p>
  
 ## What functionality does the application provide to the user?
