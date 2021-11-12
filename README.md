@@ -33,7 +33,7 @@ Before you begin, you should have already downloaded the Android Studio SDK and 
 
 ## Building the Code
 
-1. Clone the repository using HTTP: git clone https://github.com/RuTiKeyOne/Notes-mobile-app
+1. Clone the repository using HTTP: git clone https://github.com/RuTiKeyOne/TvShows
 2. Open Android Studio.
 
 3. Click on 'Open an existing Android Studio project'
