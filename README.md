@@ -5,14 +5,14 @@
 ## Screenshots
 
 <p align="center">
-  <img src="https://i.ibb.co/QjzYCG7/1.png" width="220"/>
-  <img src="https://i.ibb.co/HpSzY3s/2.png" width="220"/>
-  <img src="https://i.ibb.co/FJ6p1q9/3.png" width="220"/>
+  <img src="https://i.ibb.co/QjzYCG7/1.png" width="250"/>
+  <img src="https://i.ibb.co/HpSzY3s/2.png" width="250"/>
+  <img src="https://i.ibb.co/FJ6p1q9/3.png" width="250"/>
 </p>
 
 <p align="center">
-  <img src="https://i.ibb.co/3mKVb3t/4.png" width="220"/>
-  <img src="https://i.ibb.co/JcZ0gMH/5.png" width="220"/>
+  <img src="https://i.ibb.co/3mKVb3t/4.png" width="250"/>
+  <img src="https://i.ibb.co/JcZ0gMH/5.png" width="250"/>
 </p>
  
 ## What functionality does the application provide to the user?
@@ -33,7 +33,7 @@ Before you begin, you should have already downloaded the Android Studio SDK and 
 
 ## Building the Code
 
-1. Clone the repository using HTTP: git clone https://github.com/RuTiKeyOne/Notes-mobile-app
+1. Clone the repository using HTTP: git clone https://github.com/RuTiKeyOne/TvShows
 2. Open Android Studio.
 
 3. Click on 'Open an existing Android Studio project'
