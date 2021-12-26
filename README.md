@@ -5,9 +5,9 @@
 ## Screenshots
 
 <p align="center">
-  <img src="https://i.ibb.co/QjzYCG7/1.png" width="250"/>
-  <img src="https://i.ibb.co/HpSzY3s/2.png" width="250"/>
-  <img src="https://i.ibb.co/FJ6p1q9/3.png" width="250"/>
+  <img src="https://github.com/RuTiKeyOne/TvShows/blob/master/doc/Screenshots/1.png" width="250"/>
+  <img src="https://github.com/RuTiKeyOne/TvShows/blob/master/doc/Screenshots/2.png" width="250"/>
+  <img src="https://github.com/RuTiKeyOne/TvShows/blob/master/doc/Screenshots/3.png" width="250"/>
 </p>
 
 <p align="center">
