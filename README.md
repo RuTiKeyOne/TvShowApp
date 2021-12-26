@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-  <img src="https://i.ibb.co/3mKVb3t/4.png" width="250"/>
-  <img src="https://i.ibb.co/JcZ0gMH/5.png" width="250"/>
+  <img src="https://github.com/RuTiKeyOne/TvShows/blob/master/doc/Screenshots/4.png" width="250"/>
+  <img src="https://github.com/RuTiKeyOne/TvShows/blob/master/doc/Screenshots/5.png" width="250"/>
 </p>
  
 ## What functionality does the application provide to the user?
